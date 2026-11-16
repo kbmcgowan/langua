@@ -54,6 +54,8 @@ LanguaLex is a tool for building a lexicon or dictionary for a language and expo
 
 Langua is a web-based tool built on JavaScript, and it does not use a database, so it can be installed almost anywhere without need for running a back-end server. You simply need to run the build command to build the files, then deploy to your site.
 
+For local development and builds, use Node.js 20.19 or newer (but earlier than 26) and Yarn 1.22.22.
+
 ### Deployment to Subfolder /langua
 
 If you are installing Langua in the subfolder /langua (e.g. `*.com/langua/`), all you need to do is build and deploy:

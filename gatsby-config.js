@@ -47,6 +47,7 @@ module.exports = {
       : `/langua`,
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-image`,
     {
       resolve: `gatsby-plugin-sass`,
       options: {

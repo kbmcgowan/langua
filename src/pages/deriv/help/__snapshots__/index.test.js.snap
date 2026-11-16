@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`Deriv renders accurately 1`] = `
 <div
@@ -187,8 +187,14 @@ exports[`Deriv renders accurately 1`] = `
       Deriv
        was mainly built as a modernized and updated version of the Derivizer.
     </p>
-    <div
+    <section
+      aria-atomic="false"
+      aria-label="Notifications Alt+T"
+      aria-live="polite"
+      aria-relevant="additions text"
       className="Toastify"
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
     />
   </main>
   <footer

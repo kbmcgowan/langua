@@ -4,17 +4,34 @@
   },
   "extends": [
     "standard",
-    "react-app",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:jsx-a11y/recommended",
     "eslint:recommended",
     "plugin:jest/recommended"
   ],
   "plugins": [
     "jest"
   ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
   "rules": {
     "semi": ["error", "never"],
     "quotes": ["error", "single"],
     "space-before-function-paren": ["error", "always"],
-    "jsx-quotes": ["error", "prefer-single"]
-  }
+    "jsx-quotes": ["error", "prefer-single"],
+    "react/prop-types": "off"
+  },
+  "overrides": [
+    {
+      "files": ["**/*.test.js"],
+      "rules": {
+        "jest/expect-expect": "off",
+        "react/no-deprecated": "off"
+      }
+    }
+  ]
 }

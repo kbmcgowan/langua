@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`Tool renders accurately with and without children 1`] = `
 <div
@@ -99,8 +99,14 @@ exports[`Tool renders accurately with and without children 1`] = `
     >
       LanguaTest
     </h2>
-    <div
+    <section
+      aria-atomic="false"
+      aria-label="Notifications Alt+T"
+      aria-live="polite"
+      aria-relevant="additions text"
       className="Toastify"
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
     />
   </main>
   <footer
@@ -258,8 +264,14 @@ exports[`Tool renders accurately with and without children 2`] = `
       LanguaTest
     </h2>
     Test
-    <div
+    <section
+      aria-atomic="false"
+      aria-label="Notifications Alt+T"
+      aria-live="polite"
+      aria-relevant="additions text"
       className="Toastify"
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
     />
   </main>
   <footer

@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`Frequen renders accurately 1`] = `
 <div
@@ -196,8 +196,14 @@ exports[`Frequen renders accurately 1`] = `
        
       can also be added to the homescreen of your tablet or mobile device for easy access.
     </p>
-    <div
+    <section
+      aria-atomic="false"
+      aria-label="Notifications Alt+T"
+      aria-live="polite"
+      aria-relevant="additions text"
       className="Toastify"
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
     />
   </main>
   <footer

@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`GenResults renders accurately with various props 1`] = `
 <div
@@ -9,9 +9,7 @@ exports[`GenResults renders accurately with various props 1`] = `
   >
     <p
       className="outText"
-    >
-      
-    </p>
+    />
   </div>
   <div
     className="stats"
@@ -64,9 +62,7 @@ exports[`GenResults renders accurately with various props 3`] = `
     </p>
     <p
       className="outText"
-    >
-      
-    </p>
+    />
   </div>
   <div
     className="stats"

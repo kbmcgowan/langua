@@ -1,12 +1,18 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`Main renders accurately 1`] = `
 <main
   className="main"
 >
   Test
-  <div
+  <section
+    aria-atomic="false"
+    aria-label="Notifications Alt+T"
+    aria-live="polite"
+    aria-relevant="additions text"
     className="Toastify"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
   />
 </main>
 `;

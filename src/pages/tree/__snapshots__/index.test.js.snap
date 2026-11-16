@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`Tree renders accurately 1`] = `
 <div
@@ -111,8 +111,14 @@ exports[`Tree renders accurately 1`] = `
     <div
       className="results"
     />
-    <div
+    <section
+      aria-atomic="false"
+      aria-label="Notifications Alt+T"
+      aria-live="polite"
+      aria-relevant="additions text"
       className="Toastify"
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
     />
   </main>
   <footer

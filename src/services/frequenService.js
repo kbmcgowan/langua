@@ -243,8 +243,8 @@ class FrequenService {
 
     // Find allophones and combine their counts
     for (const seg in rawResults) {
-      if (rawResults.hasOwnProperty(seg)) {
-        if (rawResults[seg].hasOwnProperty('allophoneOf')) {
+      if (Object.prototype.hasOwnProperty.call(rawResults, seg)) {
+        if (Object.prototype.hasOwnProperty.call(rawResults[seg], 'allophoneOf')) {
           rawResults[rawResults[seg].allophoneOf].count += rawResults[seg].count
           delete rawResults[seg]
         }

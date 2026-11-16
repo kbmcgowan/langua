@@ -214,7 +214,7 @@ class MorphService {
     const newChange = JSON.parse(JSON.stringify(change))
 
     for (const prop in newChange) {
-      if (newChange.hasOwnProperty(prop)) {
+      if (Object.prototype.hasOwnProperty.call(newChange, prop)) {
         for (let i = 0; i < rules.length; i++) {
           const rewriteFrom = new RegExp(rules[i].rewriteFrom, 'g')
           newChange[prop] = newChange[prop].replace(

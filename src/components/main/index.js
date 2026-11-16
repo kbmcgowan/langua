@@ -1,5 +1,5 @@
 import React from 'react'
-import { ToastContainer, toast, Flip } from 'react-toastify'
+import { ToastContainer, Flip } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import PropTypes from 'prop-types'
 
@@ -10,7 +10,7 @@ const Main = ({ children }) => (
     {children}
     <ToastContainer
       draggablePercent={60}
-      position={toast.POSITION.BOTTOM_CENTER}
+      position='bottom-center'
       transition={Flip}
     />
   </main>
