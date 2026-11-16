@@ -41,7 +41,10 @@ module.exports = {
       }
     }
   },
-  pathPrefix: `/langua`,
+  pathPrefix:
+    process.env.GATSBY_PATH_PREFIX !== undefined
+      ? process.env.GATSBY_PATH_PREFIX
+      : `/langua`,
   plugins: [
     `gatsby-plugin-react-helmet`,
     {

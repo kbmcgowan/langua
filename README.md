@@ -54,6 +54,12 @@ LanguaLex is a tool for building a lexicon or dictionary for a language and expo
 
 Langua is a web-based tool built on JavaScript, and it does not use a database, so it can be installed almost anywhere without need for running a back-end server. You simply need to run the build command to build the files, then deploy to your site.
 
+### Deployment to GitHub Pages
+
+The GitHub Actions workflow builds the site and deploys it to GitHub Pages when changes are pushed to `main`. Pull requests run the tests and build without deploying. To enable deployment, set **Settings > Pages > Build and deployment > Source** to **GitHub Actions** in your fork.
+
+The build automatically uses the base path configured for GitHub Pages, so it works for both a repository site (for example, `username.github.io/langua/`) and a custom domain configured in **Settings > Pages**. For a custom domain, add the domain in those settings and make sure its DNS records point to GitHub Pages.
+
 ### Deployment to Subfolder /langua
 
 If you are installing Langua in the subfolder /langua (e.g. `*.com/langua/`), all you need to do is build and deploy:
