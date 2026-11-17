@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 
 The format of this changelog is based on [Keep a Changelog](https://keepachangelog.com) and this project adheres to [Semantic Versioning](https://semver.org/).
 
-## [Unreleased](https://github.com/Susurrus-LLC/langua/compare/v0.4.4...HEAD)
+## [Prior to Fork](https://github.com/Susurrus-LLC/langua/compare/v0.4.4...HEAD)
 
 ### Added 0.4.5
 

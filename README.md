@@ -24,7 +24,7 @@ Instead of using this code, which was deprecated by its original author, conside
 
 ## Overview
 
-Langua is a suite of language tools that can be used for testing, experimentation, learning, analysis, or creation. There are several main tools: [Gen](#gen), [Morph](#morph), [Deriv](#deriv), [Frequen](#frequen), [Tree](#tree), and [Lex](#lex).
+Langua is a suite of language tools that can be used for testing, experimentation, learning, analysis, or creation. There are several main tools: [Gen](#gen), [Morph](#morph), [Deriv](#deriv), and [Frequen](#frequen).
 
 ### Gen
 
@@ -42,48 +42,46 @@ LanguaDeriv is a tool for modeling word derivation based on a given list of lexe
 
 LanguaFrequen is a tool for analyzing phoneme frequencies in a given text.
 
-### Tree
-
-LanguaTree is a tool for drawing and labeling syntax trees.
-
-### Lex
-
-LanguaLex is a tool for building a lexicon or dictionary for a language and exporting it to various formats.
-
 ## Deployment
 
 Langua is a web-based tool built on JavaScript, and it does not use a database, so it can be installed almost anywhere without need for running a back-end server. You simply need to run the build command to build the files, then deploy to your site.
 
 For local development and builds, use Node.js 20.19 or newer (but earlier than 26) and Yarn 1.22.22.
 
+### Automatic deployment to GitHub Pages
+
+The GitHub Actions workflow runs tests and builds the site on pushes to `main` and on pull requests. After a successful build on `main`, it publishes the contents of `public` to the `gh-pages` branch. To enable publishing, set **Settings > Pages > Build and deployment > Source** to **Deploy from a branch**, then select **gh-pages** and **/(root)**.
+
+For a custom domain, configure it in **Settings > Pages** and add a `CNAME` file containing the domain to the repository root. The workflow copies that file into the published site.
+
 ### Deployment to Subfolder /langua
 
-If you are installing Langua in the subfolder /langua (e.g. `*.com/langua/`), all you need to do is build and deploy:
+If you are installing Langua in the subfolder /langua (e.g. `vowel.space/langua/`), all you need to do is build and deploy:
 
 1. Download and unpack the [latest release](../../releases/latest).
-1. Install the dependencies with `yarn`.
+1. Install the dependencies with `yarn install`.
 1. Build the project with `yarn build`.
-1. Copy the contents of the resulting /build folder into the /langua subfolder on your server. You're done!
+1. Copy the contents of the resulting public folder into the /langua subfolder on your server. You're done!
 
 ### Deployment to Subfolder Other than /langua
 
 If you are installing Langua in a subfolder (e.g. `*.com/languages/`), you will need to change the basename for the router before you build the project:
 
 1. Download and unpack the [latest release](../../releases/latest).
-1. Install the dependencies with `yarn`.
+1. Install the dependencies with `yarn install`.
 1. Open `gatsby-config.js` and change `` pathPrefix: `/langua`, `` to `` pathPrefix: `/yoursubfolder`, ``.
 1. Build the project with `yarn build`.
-1. Copy the contents of the resulting /build folder into the appropriate subfolder on your server. You're done!
+1. Copy the contents of the resulting public folder into the appropriate subfolder on your server. You're done!
 
 ### Deployment to Root
 
-If you are installing Langua in a website's root (e.g. a URL that ends in `.com`, `.org`, or similar):
+If you are installing Langua in a website's root:
 
 1. Download and unpack the [latest release](../../releases/latest).
-1. Install the dependencies with `yarn`.
+1. Install the dependencies with `yarn install`.
 1. Open `gatsby-config.js` and change `` pathPrefix: `/langua`, `` to ` pathPrefix: ``, `, then remove the `--prefix-paths` option from the `build` and `serve` commands.
 1. Build the project with `yarn build`.
-1. Copy the contents of the resulting /build folder into the root of your server. You're done!
+1. Copy the contents of the resulting public folder into the root of your server. You're done!
 
 ## Versioning
 
