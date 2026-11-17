@@ -23,7 +23,7 @@ export const PureHeader = ({ data }) => {
               Gen
             </Link>
           </li>
-          <li className={`${styles.navLink} ${styles.disabled}`}>
+          <li className={`${styles.navLink}`}>
             <Link to='/morph' activeClassName='active'>
               Morph
             </Link>
