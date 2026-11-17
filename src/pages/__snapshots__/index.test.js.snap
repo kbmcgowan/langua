@@ -64,24 +64,6 @@ exports[`Frequen renders accurately 1`] = `
             Frequen
           </a>
         </li>
-        <li
-          className="navLink disabled"
-        >
-          <a
-            href="/tree"
-          >
-            Tree
-          </a>
-        </li>
-        <li
-          className="navLink disabled"
-        >
-          <a
-            href="/lex"
-          >
-            Lex
-          </a>
-        </li>
       </ul>
     </nav>
   </header>
@@ -112,7 +94,7 @@ exports[`Frequen renders accurately 1`] = `
         </p>
       </a>
       <a
-        className="panel disabled"
+        className="panel"
         href="morph/"
       >
         <h2
@@ -154,36 +136,6 @@ exports[`Frequen renders accurately 1`] = `
           className="toolDescription"
         >
           LanguaFrequen Frequen description
-        </p>
-      </a>
-      <a
-        className="panel disabled"
-        href="tree/"
-      >
-        <h2
-          className="toolTitle"
-        >
-          Tree
-        </h2>
-        <p
-          className="toolDescription"
-        >
-          LanguaTree Tree description
-        </p>
-      </a>
-      <a
-        className="panel disabled"
-        href="lex/"
-      >
-        <h2
-          className="toolTitle"
-        >
-          Lex
-        </h2>
-        <p
-          className="toolDescription"
-        >
-          LanguaLex Lex description
         </p>
       </a>
     </div>

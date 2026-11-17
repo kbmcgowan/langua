@@ -64,24 +64,6 @@ exports[`Morph renders accurately 1`] = `
             Frequen
           </a>
         </li>
-        <li
-          className="navLink disabled"
-        >
-          <a
-            href="/tree"
-          >
-            Tree
-          </a>
-        </li>
-        <li
-          className="navLink disabled"
-        >
-          <a
-            href="/lex"
-          >
-            Lex
-          </a>
-        </li>
       </ul>
     </nav>
   </header>
