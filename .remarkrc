@@ -1,6 +1,0 @@
-{
-  "plugins": [
-    "preset-lint-recommended",
-    ["lint-list-item-indent", "space"]
-  ]
-}
