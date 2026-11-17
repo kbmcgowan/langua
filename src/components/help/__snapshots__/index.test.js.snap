@@ -38,7 +38,7 @@ exports[`Help renders accurately with and without children 1`] = `
           </a>
         </li>
         <li
-          className="navLink disabled"
+          className="navLink"
         >
           <a
             href="/morph"
@@ -189,7 +189,7 @@ exports[`Help renders accurately with and without children 2`] = `
           </a>
         </li>
         <li
-          className="navLink disabled"
+          className="navLink"
         >
           <a
             href="/morph"

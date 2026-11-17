@@ -38,7 +38,7 @@ exports[`Gen renders accurately 1`] = `
           </a>
         </li>
         <li
-          className="navLink disabled"
+          className="navLink"
         >
           <a
             href="/morph"
