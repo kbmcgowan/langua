@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 
 The format of this changelog is based on [Keep a Changelog](https://keepachangelog.com) and this project adheres to [Semantic Versioning](https://semver.org/).
 
+### Langua deprecated, long live langua (0.4.6)
+
+- Incremental version change to reflect minor changes post-fork
+- deprecated Tree and Lex as they had not been implemented
+- everything builds with node 22
+- Updated to gatsby 5 and plug-ins, React 18, Jest 30, and updated Babel.
+- Took over langua after Ian A. Cook deprecated the original
+
 ## [Prior to Fork](https://github.com/Susurrus-LLC/langua/compare/v0.4.4...HEAD)
 
 ### Added 0.4.5

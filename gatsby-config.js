@@ -2,12 +2,12 @@ module.exports = {
   siteMetadata: {
     title: `Langua`,
     subtitle: `A suite of language tools`,
-    description: `A suite of language tools.`,
+    description: `A suite of language tools originally by Ian A. Cook.`,
     author: `Ian A. Cook`,
     authorURL: `https://github.com/nai888`,
-    appGhURL: `https://github.com/susurrus-llc/langua`,
-    canonical: `https://susurrus-llc.github.io/langua/`,
-    version: `0.4.5`,
+    appGhURL: `https://github.com/kbmcgowan/langua`,
+    canonical: `https://vowel.space/langua/`,
+    version: `0.4.6`,
     toolInfo: {
       gen: {
         title: `Gen`,
@@ -29,16 +29,6 @@ module.exports = {
         link: `frequen`,
         description: `is a tool for analyzing phoneme frequencies in a given text.`
       },
-      tree: {
-        title: `Tree`,
-        link: `tree`,
-        description: `is a tool for drawing and labeling syntax trees.`
-      },
-      lex: {
-        title: `Lex`,
-        link: `lex`,
-        description: `is a tool for building a lexicon or dictionary for a language and exporting it to various formats.`
-      }
     }
   },
   pathPrefix:

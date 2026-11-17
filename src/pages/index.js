@@ -28,17 +28,7 @@ query HomeToolQuery {
           link
           description
         }
-        lex {
-          title
-          link
-          description
-        }
         morph {
-          title
-          link
-          description
-        }
-        tree {
           title
           link
           description
@@ -56,8 +46,6 @@ const Home = ({ data }) => {
   const morphInfo = metadata?.toolInfo?.morph
   const derivInfo = metadata?.toolInfo?.deriv
   const frequenInfo = metadata?.toolInfo?.frequen
-  const treeInfo = metadata?.toolInfo?.tree
-  const lexInfo = metadata?.toolInfo?.lex
 
   return (
     <Layout>
@@ -73,7 +61,6 @@ const Home = ({ data }) => {
         <HomePanel
           linkTo={`${morphInfo?.link}/`}
           toolTitle={morphInfo?.title}
-          disabled
         >
           {`${siteTitle}${morphInfo?.title} ${morphInfo?.description}`}
         </HomePanel>
@@ -85,20 +72,6 @@ const Home = ({ data }) => {
           toolTitle={frequenInfo?.title}
         >
           {`${siteTitle}${frequenInfo?.title} ${frequenInfo?.description}`}
-        </HomePanel>
-        <HomePanel
-          linkTo={`${treeInfo?.link}/`}
-          toolTitle={treeInfo?.title}
-          disabled
-        >
-          {`${siteTitle}${treeInfo?.title} ${treeInfo?.description}`}
-        </HomePanel>
-        <HomePanel
-          linkTo={`${lexInfo?.link}/`}
-          toolTitle={lexInfo?.title}
-          disabled
-        >
-          {`${siteTitle}${lexInfo?.title} ${lexInfo?.description}`}
         </HomePanel>
       </div>
       <p className={styles.siteDescription}>

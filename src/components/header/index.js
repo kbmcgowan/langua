@@ -38,16 +38,6 @@ export const PureHeader = ({ data }) => {
               Frequen
             </Link>
           </li>
-          <li className={`${styles.navLink} ${styles.disabled}`}>
-            <Link to='/tree' activeClassName='active'>
-              Tree
-            </Link>
-          </li>
-          <li className={`${styles.navLink} ${styles.disabled}`}>
-            <Link to='/lex' activeClassName='active'>
-              Lex
-            </Link>
-          </li>
         </ul>
       </nav>
     </header>
